@@ -1,0 +1,36 @@
+name: Bug report
+description: File a bug report here
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for creating a bug report. Please make sure there are not any open/closed issues on this topic already.
+
+  - type: textarea
+    attributes:
+      label: Description of bug
+      description: Give a short decsription of what has happened and what was meant to happen
+    validations:
+      required: true
+  
+  - type: textarea
+    attributes:
+      label: Steps to reproduce 
+      description: Steps to reproduce the unexpected behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional information
+      description: |
+        Please provide any additional information which may be beneficial such as screenshots, or logs
+      
